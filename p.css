@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(Images/background\ 3.jfif) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10
+}
+
+header{
+    position: fixed;
+     top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    text-shadow: 5px 5px 8px black;
+}
+.logo{
+    font-size: 2.5rem;
+    color: white;
+    user-select: none;
+    font-family: cursive;
+}
+.navigation a{
+    position: relative;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    font-family: cursive;
+    font-size: 25px;
+}
+.navigation a::after{
+    content:'' ;
+    position: absolute ;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px; 
+    transform-origin: right;
+    transform:scale(0);
+    transition: transform  .5s;
+}
+.navigation a:hover::after{
+    transform:scale(1);
+    transform-origin: left;
+}
+.navigation .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font: 1.1rem;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+    font-family: cursive;
+}
+.navigation .btnLogin-popup:hover{
+    background: #fff;
+    color: #162938;
+}
+.text-box{
+    padding-top: 10rem;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 4rem;
+    color : white;
+    text-shadow: 5px 5px 8px black;
+    font-family: monospace;
+}
+
+.text-box p{
+       margin: 10px 0 40px;
+       font-size: 1.3rem;
+       color: white;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black; 
+    border: 1px solid white;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 1.5rem;
+}
+.hero-btn:hover{
+        border: 1px solid #fff;
+        background: #fff;
+        transition: 1s;
+}
+

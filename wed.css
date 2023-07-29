@@ -1,0 +1,17 @@
+body {
+	background-image: url('background.jpg');
+	background-size: cover;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 50px;
+	color: white;
+	text-align: center;
+}
+
+.email {
+	font-size: 24px;
+	margin-top: 20px;
+}
