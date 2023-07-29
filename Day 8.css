@@ -1,0 +1,28 @@
+* {
+    font-family: Arial, Verdana, sans-serif;}
+    h1 {
+    font-family: "Courier New", monospace;
+    color: red; 
+    }
+input{
+     background: white
+    
+    }
+    body{
+        background-image: url(Images/jb3.jpg);
+    }
+    legend{
+        color:red;
+        font-size: 250%;
+        font-style: oblique;
+    }
+    a{
+        color: red;
+        font-size: 150%;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: oblique;
+        text-shadow: 5px 5px 8px black;
+    }
+.center p label{
+        font-size: 120;
+    }
