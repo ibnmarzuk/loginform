@@ -1,0 +1,14 @@
+import time
+from playsound import playsound
+
+def set_alarm(alarm_time, message):
+    while True:
+        current_time = time.strftime("%H:%M:%S")
+        if current_time == alarm_time:
+            print(message)
+            playsound("path_to_your_alarm_sound.mp3")  # Replace with the path to your alarm sound file
+            break
+        time.sleep(1)
+
+# Example: Set an alarm at 08:00 AM with a custom message
+set_alarm("08:00:00", "Time to wake up!")
